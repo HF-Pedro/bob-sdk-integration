@@ -1,0 +1,29 @@
+{
+  "name": "bob-tests",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc src/index.ts",
+    "dev": "ts-node src/index.ts"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@gobob/bob-sdk": "^3.1.0",
+    "@scure/base": "^1.2.1",
+    "@scure/btc-signer": "^1.5.0",
+    "axios": "^1.7.9",
+    "bitcoinjs-lib": "^6.1.7",
+    "ecpair": "^3.0.0-rc.0",
+    "ethers": "^6.13.4",
+    "node-ts": "^6.1.3",
+    "tiny-secp256k1": "^2.2.3",
+    "valibot": "^1.0.0-beta.9"
+  }
+}

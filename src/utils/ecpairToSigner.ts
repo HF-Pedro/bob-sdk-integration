@@ -5,12 +5,12 @@ import { Signer } from './types';
 
 export function ecpairToSigner(keyPair: { publicKey: Uint8Array; privateKey: Uint8Array; }): bitcoin.Signer {
     return {
-        publicKey: Buffer.from(keyPair.publicKey), // Converte publicKey para Buffer
+        publicKey: Buffer.from(keyPair.publicKey),
         sign: (hash: Buffer) => {
             if (!keyPair.privateKey) {
                 throw new Error('Chave privada não encontrada no keyPair');
             }
-            return Buffer.from(ecc.sign(hash, Buffer.from(keyPair.privateKey))); // Converte privateKey para Buffer
+            return Buffer.from(ecc.sign(hash, Buffer.from(keyPair.privateKey))); 
         },
     };
 }

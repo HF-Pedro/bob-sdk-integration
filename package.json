@@ -5,7 +5,6 @@
   "scripts": {
     "build": "tsc src/index.ts",
     "dev": "ts-node src/index.ts"
-
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +19,7 @@
     "@scure/btc-signer": "^1.5.0",
     "axios": "^1.7.9",
     "bitcoinjs-lib": "^6.1.7",
+    "dotenv": "^16.4.7",
     "ecpair": "^3.0.0-rc.0",
     "ethers": "^6.13.4",
     "node-ts": "^6.1.3",
